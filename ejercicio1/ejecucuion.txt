@@ -1,266 +1,0 @@
--e 
-[1;32mEmpieza la ejecución reto1 ...[0m
--e 
-[1;32mSTAGE 1: [Init]
-[0m
-Des:1 https://download.docker.com/linux/ubuntu jammy InRelease [48,8 kB]
-Obj:2 http://co.archive.ubuntu.com/ubuntu jammy InRelease
-Des:3 http://co.archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
-Des:4 http://co.archive.ubuntu.com/ubuntu jammy-backports InRelease [109 kB]
-Des:5 http://co.archive.ubuntu.com/ubuntu jammy-security InRelease [110 kB]
-Des:6 http://co.archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [1.153 kB]
-Des:7 http://co.archive.ubuntu.com/ubuntu jammy-updates/main Translation-en [246 kB]
-Des:8 http://co.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [995 kB]
-Des:9 http://co.archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [218 kB]
-Des:10 http://co.archive.ubuntu.com/ubuntu jammy-security/main amd64 Packages [945 kB]
-Des:11 http://co.archive.ubuntu.com/ubuntu jammy-security/main Translation-en [187 kB]
-Descargados 4.130 kB en 7s (584 kB/s)
-Leyendo lista de paquetes...
-
-[1;32mEl Servidor se encuentra Actualizado ...[0m
-\n\033[1;32mGit se instalará en tu sistema.\033[0m
-Leyendo lista de paquetes...
-Creando árbol de dependencias...
-Leyendo la información de estado...
-Los paquetes indicados a continuación se instalaron de forma automática y ya no son necesarios.
-  apache2-bin apache2-data apache2-utils galera-4 libapache2-mod-php8.1
-  libapr1 libaprutil1 libaprutil1-dbd-sqlite3 libaprutil1-ldap
-  libcgi-fast-perl libcgi-pm-perl libclone-perl libconfig-inifiles-perl
-  libdaxctl1 libdbd-mysql-perl libdbi-perl libencode-locale-perl libfcgi-bin
-  libfcgi-perl libfcgi0ldbl libhtml-parser-perl libhtml-tagset-perl
-  libhtml-template-perl libhttp-date-perl libhttp-message-perl libio-html-perl
-  liblua5.3-0 liblwp-mediatypes-perl libmysqlclient21 libndctl6 libonig5
-  libpmem1 libsnappy1v5 libtimedate-perl liburi-perl liburing2 libzip4
-  mysql-common php-common php8.1 php8.1-cli php8.1-common php8.1-curl
-  php8.1-gd php8.1-mbstring php8.1-mysql php8.1-opcache php8.1-readline
-  php8.1-zip socat ssl-cert
-Utilice «sudo apt autoremove» para eliminarlos.
-Paquetes sugeridos:
-  git-daemon-run | git-daemon-sysvinit git-doc git-email git-gui gitk gitweb
-  git-cvs git-mediawiki git-svn
-Se instalarán los siguientes paquetes NUEVOS:
-  git
-0 actualizados, 1 nuevos se instalarán, 0 para eliminar y 109 no actualizados.
-Se necesita descargar 0 B/3.166 kB de archivos.
-Se utilizarán 18,9 MB de espacio de disco adicional después de esta operación.
-Seleccionando el paquete git previamente no seleccionado.
-(Leyendo la base de datos ... (Leyendo la base de datos ... 5%(Leyendo la base de datos ... 10%(Leyendo la base de datos ... 15%(Leyendo la base de datos ... 20%(Leyendo la base de datos ... 25%(Leyendo la base de datos ... 30%(Leyendo la base de datos ... 35%(Leyendo la base de datos ... 40%(Leyendo la base de datos ... 45%(Leyendo la base de datos ... 50%(Leyendo la base de datos ... 55%(Leyendo la base de datos ... 60%(Leyendo la base de datos ... 65%(Leyendo la base de datos ... 70%(Leyendo la base de datos ... 75%(Leyendo la base de datos ... 80%(Leyendo la base de datos ... 85%(Leyendo la base de datos ... 90%(Leyendo la base de datos ... 95%(Leyendo la base de datos ... 100%(Leyendo la base de datos ... 144470 ficheros o directorios instalados actualmente.)
-Preparando para desempaquetar .../git_1%3a2.34.1-1ubuntu1.10_amd64.deb ...
-Desempaquetando git (1:2.34.1-1ubuntu1.10) ...
-Configurando git (1:2.34.1-1ubuntu1.10) ...
-user.name=enieto2018
-user.email=e.nieto@utp.edu.co
-safe.directory=*
-safe.directory=*
-safe.directory=*
-safe.directory=*
-safe.directory=*
-safe.directory=*
-safe.directory=*
-safe.directory=*
-safe.directory=*
-safe.directory=*
-safe.directory=*
-safe.directory=*
-\n\033[1;32mApache  se instalará en tu sistema.\033[0m
-Leyendo lista de paquetes...
-Creando árbol de dependencias...
-Leyendo la información de estado...
-Los paquetes indicados a continuación se instalaron de forma automática y ya no son necesarios.
-  galera-4 libapache2-mod-php8.1 libcgi-fast-perl libcgi-pm-perl libclone-perl
-  libconfig-inifiles-perl libdaxctl1 libdbd-mysql-perl libdbi-perl
-  libencode-locale-perl libfcgi-bin libfcgi-perl libfcgi0ldbl
-  libhtml-parser-perl libhtml-tagset-perl libhtml-template-perl
-  libhttp-date-perl libhttp-message-perl libio-html-perl
-  liblwp-mediatypes-perl libmysqlclient21 libndctl6 libonig5 libpmem1
-  libsnappy1v5 libtimedate-perl liburi-perl liburing2 libzip4 mysql-common
-  php-common php8.1 php8.1-cli php8.1-common php8.1-curl php8.1-gd
-  php8.1-mbstring php8.1-mysql php8.1-opcache php8.1-readline php8.1-zip socat
-Utilice «sudo apt autoremove» para eliminarlos.
-Paquetes sugeridos:
-  apache2-doc apache2-suexec-pristine | apache2-suexec-custom www-browser
-Se instalarán los siguientes paquetes NUEVOS:
-  apache2
-0 actualizados, 1 nuevos se instalarán, 0 para eliminar y 109 no actualizados.
-Se necesita descargar 97,8 kB de archivos.
-Se utilizarán 546 kB de espacio de disco adicional después de esta operación.
-Des:1 http://co.archive.ubuntu.com/ubuntu jammy-updates/main amd64 apache2 amd64 2.4.52-1ubuntu4.6 [97,8 kB]
-Descargados 97,8 kB en 1s (162 kB/s)
-Seleccionando el paquete apache2 previamente no seleccionado.
-(Leyendo la base de datos ... (Leyendo la base de datos ... 5%(Leyendo la base de datos ... 10%(Leyendo la base de datos ... 15%(Leyendo la base de datos ... 20%(Leyendo la base de datos ... 25%(Leyendo la base de datos ... 30%(Leyendo la base de datos ... 35%(Leyendo la base de datos ... 40%(Leyendo la base de datos ... 45%(Leyendo la base de datos ... 50%(Leyendo la base de datos ... 55%(Leyendo la base de datos ... 60%(Leyendo la base de datos ... 65%(Leyendo la base de datos ... 70%(Leyendo la base de datos ... 75%(Leyendo la base de datos ... 80%(Leyendo la base de datos ... 85%(Leyendo la base de datos ... 90%(Leyendo la base de datos ... 95%(Leyendo la base de datos ... 100%(Leyendo la base de datos ... 145263 ficheros o directorios instalados actualmente.)
-Preparando para desempaquetar .../apache2_2.4.52-1ubuntu4.6_amd64.deb ...
-Desempaquetando apache2 (2.4.52-1ubuntu4.6) ...
-Configurando apache2 (2.4.52-1ubuntu4.6) ...
-Enabling module mpm_event.
-Enabling module authz_core.
-Enabling module authz_host.
-Enabling module authn_core.
-Enabling module auth_basic.
-Enabling module access_compat.
-Enabling module authn_file.
-Enabling module authz_user.
-Enabling module alias.
-Enabling module dir.
-Enabling module autoindex.
-Enabling module env.
-Enabling module mime.
-Enabling module negotiation.
-Enabling module setenvif.
-Enabling module filter.
-Enabling module deflate.
-Enabling module status.
-Enabling module reqtimeout.
-Enabling conf charset.
-Enabling conf localized-error-pages.
-Enabling conf other-vhosts-access-log.
-Enabling conf security.
-Enabling conf serve-cgi-bin.
-Enabling site 000-default.
-Created symlink /etc/systemd/system/multi-user.target.wants/apache2.service → /lib/systemd/system/apache2.service.
-Created symlink /etc/systemd/system/multi-user.target.wants/apache-htcacheclean.service → /lib/systemd/system/apache-htcacheclean.service.
-Procesando disparadores para man-db (2.10.2-1) ...
-Procesando disparadores para ufw (0.36.1-4build1) ...
-
-[0;34mConfiguración apache para que soporte de extensión php...[0m
-
-[0;34mServicio apache reiniciado...[0m
-\n\033[1;32mphp se instalará en tu sistema.\033[0m
-Leyendo lista de paquetes...
-Creando árbol de dependencias...
-Leyendo la información de estado...
-Los paquetes indicados a continuación se instalaron de forma automática y ya no son necesarios.
-  galera-4 libcgi-fast-perl libcgi-pm-perl libclone-perl
-  libconfig-inifiles-perl libdaxctl1 libdbd-mysql-perl libdbi-perl
-  libencode-locale-perl libfcgi-bin libfcgi-perl libfcgi0ldbl
-  libhtml-parser-perl libhtml-tagset-perl libhtml-template-perl
-  libhttp-date-perl libhttp-message-perl libio-html-perl
-  liblwp-mediatypes-perl libmysqlclient21 libndctl6 libpmem1 libsnappy1v5
-  libtimedate-perl liburi-perl liburing2 mysql-common socat
-Utilice «sudo apt autoremove» para eliminarlos.
-Se instalarán los siguientes paquetes NUEVOS:
-  libapache2-mod-php php php-curl php-gd php-json php-mbstring php-mysql
-  php-zip
-0 actualizados, 8 nuevos se instalarán, 0 para eliminar y 109 no actualizados.
-Se necesita descargar 16,7 kB de archivos.
-Se utilizarán 119 kB de espacio de disco adicional después de esta operación.
-Des:1 http://co.archive.ubuntu.com/ubuntu jammy/main amd64 libapache2-mod-php all 2:8.1+92ubuntu1 [2.898 B]
-Des:2 http://co.archive.ubuntu.com/ubuntu jammy/main amd64 php all 2:8.1+92ubuntu1 [2.756 B]
-Des:3 http://co.archive.ubuntu.com/ubuntu jammy/main amd64 php-curl all 2:8.1+92ubuntu1 [1.834 B]
-Des:4 http://co.archive.ubuntu.com/ubuntu jammy/main amd64 php-gd all 2:8.1+92ubuntu1 [1.828 B]
-Des:5 http://co.archive.ubuntu.com/ubuntu jammy/main amd64 php-json all 2:8.1+92ubuntu1 [1.834 B]
-Des:6 http://co.archive.ubuntu.com/ubuntu jammy/universe amd64 php-mbstring all 2:8.1+92ubuntu1 [1.844 B]
-Des:7 http://co.archive.ubuntu.com/ubuntu jammy/main amd64 php-mysql all 2:8.1+92ubuntu1 [1.834 B]
-Des:8 http://co.archive.ubuntu.com/ubuntu jammy/universe amd64 php-zip all 2:8.1+92ubuntu1 [1.830 B]
-Descargados 16,7 kB en 1s (30,2 kB/s)
-Seleccionando el paquete libapache2-mod-php previamente no seleccionado.
-(Leyendo la base de datos ... (Leyendo la base de datos ... 5%(Leyendo la base de datos ... 10%(Leyendo la base de datos ... 15%(Leyendo la base de datos ... 20%(Leyendo la base de datos ... 25%(Leyendo la base de datos ... 30%(Leyendo la base de datos ... 35%(Leyendo la base de datos ... 40%(Leyendo la base de datos ... 45%(Leyendo la base de datos ... 50%(Leyendo la base de datos ... 55%(Leyendo la base de datos ... 60%(Leyendo la base de datos ... 65%(Leyendo la base de datos ... 70%(Leyendo la base de datos ... 75%(Leyendo la base de datos ... 80%(Leyendo la base de datos ... 85%(Leyendo la base de datos ... 90%(Leyendo la base de datos ... 95%(Leyendo la base de datos ... 100%(Leyendo la base de datos ... 145479 ficheros o directorios instalados actualmente.)
-Preparando para desempaquetar .../0-libapache2-mod-php_2%3a8.1+92ubuntu1_all.deb ...
-Desempaquetando libapache2-mod-php (2:8.1+92ubuntu1) ...
-Seleccionando el paquete php previamente no seleccionado.
-Preparando para desempaquetar .../1-php_2%3a8.1+92ubuntu1_all.deb ...
-Desempaquetando php (2:8.1+92ubuntu1) ...
-Seleccionando el paquete php-curl previamente no seleccionado.
-Preparando para desempaquetar .../2-php-curl_2%3a8.1+92ubuntu1_all.deb ...
-Desempaquetando php-curl (2:8.1+92ubuntu1) ...
-Seleccionando el paquete php-gd previamente no seleccionado.
-Preparando para desempaquetar .../3-php-gd_2%3a8.1+92ubuntu1_all.deb ...
-Desempaquetando php-gd (2:8.1+92ubuntu1) ...
-Seleccionando el paquete php-json previamente no seleccionado.
-Preparando para desempaquetar .../4-php-json_2%3a8.1+92ubuntu1_all.deb ...
-Desempaquetando php-json (2:8.1+92ubuntu1) ...
-Seleccionando el paquete php-mbstring previamente no seleccionado.
-Preparando para desempaquetar .../5-php-mbstring_2%3a8.1+92ubuntu1_all.deb ...
-Desempaquetando php-mbstring (2:8.1+92ubuntu1) ...
-Seleccionando el paquete php-mysql previamente no seleccionado.
-Preparando para desempaquetar .../6-php-mysql_2%3a8.1+92ubuntu1_all.deb ...
-Desempaquetando php-mysql (2:8.1+92ubuntu1) ...
-Seleccionando el paquete php-zip previamente no seleccionado.
-Preparando para desempaquetar .../7-php-zip_2%3a8.1+92ubuntu1_all.deb ...
-Desempaquetando php-zip (2:8.1+92ubuntu1) ...
-Configurando php (2:8.1+92ubuntu1) ...
-Configurando php-curl (2:8.1+92ubuntu1) ...
-Configurando php-mysql (2:8.1+92ubuntu1) ...
-Configurando php-json (2:8.1+92ubuntu1) ...
-Configurando php-mbstring (2:8.1+92ubuntu1) ...
-Configurando libapache2-mod-php (2:8.1+92ubuntu1) ...
-Configurando php-zip (2:8.1+92ubuntu1) ...
-Configurando php-gd (2:8.1+92ubuntu1) ...
-PHP 8.1.2-1ubuntu2.14 (cli) (built: Aug 18 2023 11:41:11) (NTS)
-Copyright (c) The PHP Group
-Zend Engine v4.1.2, Copyright (c) Zend Technologies
-    with Zend OPcache v8.1.2-1ubuntu2.14, Copyright (c), by Zend Technologies
-
-[1;33minstalando MARIA DB ...[0m
-Leyendo lista de paquetes...
-Creando árbol de dependencias...
-Leyendo la información de estado...
-Se instalarán los siguientes paquetes adicionales:
-  libmariadb3 mariadb-client-10.6 mariadb-client-core-10.6 mariadb-common
-  mariadb-server-10.6 mariadb-server-core-10.6
-Paquetes sugeridos:
-  mailx mariadb-test
-Se instalarán los siguientes paquetes NUEVOS:
-  libmariadb3 mariadb-client-10.6 mariadb-client-core-10.6 mariadb-common
-  mariadb-server mariadb-server-10.6 mariadb-server-core-10.6
-0 actualizados, 7 nuevos se instalarán, 0 para eliminar y 109 no actualizados.
-Se necesita descargar 14,4 MB de archivos.
-Se utilizarán 149 MB de espacio de disco adicional después de esta operación.
-Des:1 http://co.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 mariadb-common all 1:10.6.12-0ubuntu0.22.04.1 [16,4 kB]
-Des:2 http://co.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 libmariadb3 amd64 1:10.6.12-0ubuntu0.22.04.1 [173 kB]
-Des:3 http://co.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 mariadb-client-core-10.6 amd64 1:10.6.12-0ubuntu0.22.04.1 [976 kB]
-Des:4 http://co.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 mariadb-client-10.6 amd64 1:10.6.12-0ubuntu0.22.04.1 [1.545 kB]
-Des:5 http://co.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 mariadb-server-core-10.6 amd64 1:10.6.12-0ubuntu0.22.04.1 [7.633 kB]
-Des:6 http://co.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 mariadb-server-10.6 amd64 1:10.6.12-0ubuntu0.22.04.1 [4.081 kB]
-Des:7 http://co.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 mariadb-server all 1:10.6.12-0ubuntu0.22.04.1 [11,8 kB]
-Preconfigurando paquetes ...
-Descargados 14,4 MB en 10s (1.487 kB/s)
-Seleccionando el paquete mariadb-common previamente no seleccionado.
-(Leyendo la base de datos ... (Leyendo la base de datos ... 5%(Leyendo la base de datos ... 10%(Leyendo la base de datos ... 15%(Leyendo la base de datos ... 20%(Leyendo la base de datos ... 25%(Leyendo la base de datos ... 30%(Leyendo la base de datos ... 35%(Leyendo la base de datos ... 40%(Leyendo la base de datos ... 45%(Leyendo la base de datos ... 50%(Leyendo la base de datos ... 55%(Leyendo la base de datos ... 60%(Leyendo la base de datos ... 65%(Leyendo la base de datos ... 70%(Leyendo la base de datos ... 75%(Leyendo la base de datos ... 80%(Leyendo la base de datos ... 85%(Leyendo la base de datos ... 90%(Leyendo la base de datos ... 95%(Leyendo la base de datos ... 100%(Leyendo la base de datos ... 145503 ficheros o directorios instalados actualmente.)
-Preparando para desempaquetar .../mariadb-common_1%3a10.6.12-0ubuntu0.22.04.1_all.deb ...
-Desempaquetando mariadb-common (1:10.6.12-0ubuntu0.22.04.1) ...
-Seleccionando el paquete libmariadb3:amd64 previamente no seleccionado.
-Preparando para desempaquetar .../libmariadb3_1%3a10.6.12-0ubuntu0.22.04.1_amd64.deb ...
-Desempaquetando libmariadb3:amd64 (1:10.6.12-0ubuntu0.22.04.1) ...
-Seleccionando el paquete mariadb-client-core-10.6 previamente no seleccionado.
-Preparando para desempaquetar .../mariadb-client-core-10.6_1%3a10.6.12-0ubuntu0.22.04.1_amd64.deb ...
-Desempaquetando mariadb-client-core-10.6 (1:10.6.12-0ubuntu0.22.04.1) ...
-Seleccionando el paquete mariadb-client-10.6 previamente no seleccionado.
-Preparando para desempaquetar .../mariadb-client-10.6_1%3a10.6.12-0ubuntu0.22.04.1_amd64.deb ...
-Desempaquetando mariadb-client-10.6 (1:10.6.12-0ubuntu0.22.04.1) ...
-Seleccionando el paquete mariadb-server-core-10.6 previamente no seleccionado.
-Preparando para desempaquetar .../mariadb-server-core-10.6_1%3a10.6.12-0ubuntu0.22.04.1_amd64.deb ...
-Desempaquetando mariadb-server-core-10.6 (1:10.6.12-0ubuntu0.22.04.1) ...
-Configurando mariadb-common (1:10.6.12-0ubuntu0.22.04.1) ...
-update-alternatives: utilizando /etc/mysql/mariadb.cnf para proveer /etc/mysql/my.cnf (my.cnf) en modo automático
-Seleccionando el paquete mariadb-server-10.6 previamente no seleccionado.
-(Leyendo la base de datos ... (Leyendo la base de datos ... 5%(Leyendo la base de datos ... 10%(Leyendo la base de datos ... 15%(Leyendo la base de datos ... 20%(Leyendo la base de datos ... 25%(Leyendo la base de datos ... 30%(Leyendo la base de datos ... 35%(Leyendo la base de datos ... 40%(Leyendo la base de datos ... 45%(Leyendo la base de datos ... 50%(Leyendo la base de datos ... 55%(Leyendo la base de datos ... 60%(Leyendo la base de datos ... 65%(Leyendo la base de datos ... 70%(Leyendo la base de datos ... 75%(Leyendo la base de datos ... 80%(Leyendo la base de datos ... 85%(Leyendo la base de datos ... 90%(Leyendo la base de datos ... 95%(Leyendo la base de datos ... 100%(Leyendo la base de datos ... 145714 ficheros o directorios instalados actualmente.)
-Preparando para desempaquetar .../mariadb-server-10.6_1%3a10.6.12-0ubuntu0.22.04.1_amd64.deb ...
-Desempaquetando mariadb-server-10.6 (1:10.6.12-0ubuntu0.22.04.1) ...
-Seleccionando el paquete mariadb-server previamente no seleccionado.
-Preparando para desempaquetar .../mariadb-server_1%3a10.6.12-0ubuntu0.22.04.1_all.deb ...
-Desempaquetando mariadb-server (1:10.6.12-0ubuntu0.22.04.1) ...
-Configurando libmariadb3:amd64 (1:10.6.12-0ubuntu0.22.04.1) ...
-Configurando mariadb-server-core-10.6 (1:10.6.12-0ubuntu0.22.04.1) ...
-Configurando mariadb-client-core-10.6 (1:10.6.12-0ubuntu0.22.04.1) ...
-Configurando mariadb-client-10.6 (1:10.6.12-0ubuntu0.22.04.1) ...
-Configurando mariadb-server-10.6 (1:10.6.12-0ubuntu0.22.04.1) ...
-Created symlink /etc/systemd/system/multi-user.target.wants/mariadb.service → /lib/systemd/system/mariadb.service.
-Configurando mariadb-server (1:10.6.12-0ubuntu0.22.04.1) ...
-Procesando disparadores para man-db (2.10.2-1) ...
-Procesando disparadores para libc-bin (2.35-0ubuntu3.4) ...
-
-[0;34mConfigurando base de datos ...[0m
--e 
-[1;32mSTAGE 2: [Build]
-[0m
-\n\033[1;33mSe clonará el repositorio.\033[0m
-Branch 'clase2-linux-bash' set up to track remote branch 'clase2-linux-bash' from 'origin'.
-\n\033[0;34mArchivos estaticos copiados.\033[0m
-\n\033[0;34mEjecución de script sql ejecutado.\033[0m
--e 
-[1;32mSTAGE 3: [Deploy]
-[0m
-
-[0;34mServicio apache reiniciado...[0m
-
-[0;34m Servicio ...[0m
