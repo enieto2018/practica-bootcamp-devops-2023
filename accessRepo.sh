@@ -7,19 +7,28 @@ LYELLOW='\033[1;33m'
 repo="bootcamp-devops-2023"
 project="app-295devops-travel"
 branch="clase2-linux-bash"
+
+function execution_script_sql {
+    devopstravel_sql="/var/www/html/database/devopstravel.sql"
+    mysql < $devopstravel_sql
+}
+
 if [ -d "$repo" ] ; then
     echo "Existe repo"
     cd $repo
     git pull origin $branch
     git checkout $branch
-    sudo cp -rf $project/* /var/www/html
+    pwd
 else
     echo "\n${LYELLOW}Se clonará el repositorio.${NC}"
     git clone https://github.com/roxsross/$repo.git
     cd $repo/
     git checkout $branch
-
+    execution_script_sql
 fi
-sudo mv /var/www/html/index.html /var/www/html/index.html.bkp
-#copy files
-sudo cp -rf $project/* /var/www/html
+function copyfiles {
+    cp -rf $project/* /var/www/html
+}
+#llamado a la función de copia de archivos estaticos
+copyfiles
+echo "\n${LBLUE}Archivos estaticos copiados.${NC}"

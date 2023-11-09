@@ -9,6 +9,7 @@ LYELLOW='\033[1;33m'
 function installPackage_git {
     echo "\n${LGREEN}Git se instalará en tu sistema.${NC}"
     apt install -y git
+    git config --list
     git config --global user.name "enieto2018"
     git config --global user.email e.nieto@utp.edu.co
     git config --global --add safe.directory '*'
@@ -19,14 +20,35 @@ function installPackage_apache {
     apt install apache2 -y
     systemctl start apache2
     systemctl enable apache2
+    #backup de archivo index
+    mv /var/www/html/index.html /var/www/html/index.html.bkp
+    echo -e "\n${LBLUE}Configuración apache para que soporte de extensión php...${NC}"
+    config_apache="/etc/apache2/mods-enabled/dir.conf"
+cat << EOF > $config_apache
+<IfModule mod_dir.c>
+    DirectoryIndex index.php index.cgi index.pl index.html index.xhtml index.htm
+</IfModule>
+
+# vim: syntax=apache ts=4 sw=4 sts=4 sr noet
+EOF
+echo -e "\n${LBLUE}Servicio apache reiniciado...${NC}"
+    systemctl reload apache2
 }
 
 function installPackage_mariadb {
+
     echo -e "\n${LYELLOW}instalando MARIA DB ...${NC}"
     apt install -y mariadb-server
     #Iniciando la base de datos
     systemctl start mariadb
     systemctl enable mariadb
+    # Configuracion de la base de datos 
+    echo -e "\n${LBLUE}Configurando base de datos ...${NC}"
+    mysql -e "
+    CREATE DATABASE devopstravel;
+    CREATE USER 'codeuser'@'localhost' IDENTIFIED BY 'codepass';
+    GRANT ALL PRIVILEGES ON *.* TO 'codeuser'@'localhost';
+    FLUSH PRIVILEGES;"
 
 }
 

@@ -15,5 +15,7 @@ else
     ./accessRepo.sh
     echo -e "\n${LGREEN}STAGE 3: [Deploy]\n${NC}"
     ./config.sh
+    echo -e "\n${LGREEN}STAGE 4: [Notify]\n${NC}"
+    ./discord.sh    
 exit 1 
 fi
