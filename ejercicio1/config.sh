@@ -10,6 +10,7 @@ function replace_password {
 }
 #Ejecucion de reeplace password
 replace_password
+echo -e "\n${LBLUE}Reemplazo de datos de BD..${NC}"
 #Validación de aplicacion travel
 echo -e "\n${LBLUE}Servicio apache reiniciado...${NC}"
 systemctl reload apache2

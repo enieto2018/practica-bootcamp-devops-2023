@@ -9,7 +9,7 @@ project="app-295devops-travel"
 branch="clase2-linux-bash"
 
 function execution_script_sql {
-    devopstravel_sql="devopstravel_sql="/var/www/html/database/devopstravel.sql""
+    devopstravel_sql="/var/www/html/database/devopstravel.sql"
     mysql < $devopstravel_sql
 }
 function copyfiles {
@@ -22,15 +22,16 @@ if [ -d "$repo" ] ; then
     git checkout $branch
     #llamado a la función de copia de archivos estaticos
     copyfiles
-    echo "\n${LBLUE} Archivos estaticos copiados.${NC}"
+    echo -e "\n${LBLUE} Archivos estaticos copiados.${NC}"
 else
-    echo "\n${LYELLOW} Se clonará el repositorio.${NC}"
+    echo -e "\n${LYELLOW} Se clonará el repositorio.${NC}"
     git clone https://github.com/roxsross/$repo.git
     cd $repo/
     git checkout $branch
     #llamado a la función de copia de archivos estaticos
-    echo -e "\n${LBLUE} Archivos estaticos copiados.${NC}"
     copyfiles
-    echo "\n${LBLUE} Script ejecutado.${NC}"
+    echo -e "\n${LBLUE} Archivos estaticos copiados.${NC}"
+    #llamado a la función de ejecución de script
     execution_script_sql
+    echo -e "\n${LBLUE} Script ejecutado.${NC}"
 fi
