@@ -16,6 +16,6 @@ else
     echo -e "\n${LGREEN}STAGE 3: [Deploy]\n${NC}"
     ./config.sh
     echo -e "\n${LGREEN}STAGE 4: [Notify]\n${NC}"
-    ./discord.sh ./../practica-bootcamp-devops-2023/   
+    ./discord.sh ./../../practica-bootcamp-devops-2023/   
 exit 1 
 fi

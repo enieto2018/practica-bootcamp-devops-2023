@@ -16,12 +16,12 @@ cd "$1"
 REPO_NAME=$(basename $(git rev-parse --show-toplevel))
 # Obtiene la URL remota del repositorio
 REPO_URL=$(git remote get-url origin)
-WEB_URL="https://717f7731-9368-4bd9-b042-a59555d0f694-10-244-8-244-80.saci.r.killercoda.com/index.php"
+WEB_URL="https://717f7731-9368-4bd9-b042-a59555d0f694-10-244-8-244-80.saci.r.killercoda.com/"
 # Realiza una solicitud HTTP GET a la URL
 HTTP_STATUS=$(curl -Is "$WEB_URL" | head -n 1)
 
 # Verifica si la respuesta es 200 OK (puedes ajustar esto según tus necesidades)
-if [[ "$HTTP_STATUS" == *"200 OK"* ]]; then
+if [[ "$HTTP_STATUS" == *"200"* ]]; then
   # Obtén información del repositorio
     DEPLOYMENT_INFO2="Despliegue del repositorio $REPO_NAME: "
     DEPLOYMENT_INFO="La página web $WEB_URL está en línea."
