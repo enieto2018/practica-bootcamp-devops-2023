@@ -16,4 +16,4 @@ echo -e "\n${LBLUE}Servicio apache reiniciado...${NC}"
 systemctl reload apache2
 
 echo -e "\n${LBLUE} Consultando Servicio...${NC}"
-curl -I http://1.130.252.101:80/
+#curl -I http://1.130.252.101:80/
