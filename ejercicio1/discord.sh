@@ -16,7 +16,7 @@ cd "$1"
 REPO_NAME=$(basename $(git rev-parse --show-toplevel))
 # Obtiene la URL remota del repositorio
 REPO_URL=$(git remote get-url origin)
-WEB_URL="https://717f7731-9368-4bd9-b042-a59555d0f694-10-244-8-244-80.saci.r.killercoda.com/"
+WEB_URL="https://717f7731-9368-4bd9-b042-a59555d0f694-10-244-8-244-80.saci.r.killercoda.com/index.php"
 # Realiza una solicitud HTTP GET a la URL
 HTTP_STATUS=$(curl -Is "$WEB_URL" | head -n 1)
 
