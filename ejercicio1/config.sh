@@ -14,5 +14,5 @@ replace_password
 echo -e "\n${LBLUE}Servicio apache reiniciado...${NC}"
 systemctl reload apache2
 
-echo -e "\n${LBLUE} Servicio disponible ...${NC}"
-#curl http://1.130.252.101:80/
+echo -e "\n${LBLUE} Consultando Servicio...${NC}"
+curl -I http://1.130.252.101:80/

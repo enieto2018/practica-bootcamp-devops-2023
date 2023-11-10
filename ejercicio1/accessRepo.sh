@@ -12,25 +12,25 @@ function execution_script_sql {
     devopstravel_sql="devopstravel_sql="/var/www/html/database/devopstravel.sql""
     mysql < $devopstravel_sql
 }
-
+function copyfiles {
+    cp -rf $project/* /var/www/html
+}
 if [ -d "$repo" ] ; then
     echo "Existe repo"
     cd $repo
     git pull origin $branch
     git checkout $branch
-    pwd
+    #llamado a la función de copia de archivos estaticos
+    copyfiles
+    echo "\n${LBLUE} Archivos estaticos copiados.${NC}"
 else
-    echo "\n${LYELLOW}Se clonará el repositorio.${NC}"
+    echo "\n${LYELLOW} Se clonará el repositorio.${NC}"
     git clone https://github.com/roxsross/$repo.git
     cd $repo/
     git checkout $branch
+    #llamado a la función de copia de archivos estaticos
+    echo -e "\n${LBLUE} Archivos estaticos copiados.${NC}"
+    copyfiles
+    echo "\n${LBLUE} Script ejecutado.${NC}"
+    execution_script_sql
 fi
-function copyfiles {
-    cp -rf $project/* /var/www/html
-}
-#llamado a la función de copia de archivos estaticos
-copyfiles
-echo "\n${LBLUE}Archivos estaticos copiados.${NC}"
-#llamado a la función de copia de archivos estaticos
-execution_script_sql
-echo "\n${LBLUE}Script ejecutado.${NC}"
